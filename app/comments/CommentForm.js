@@ -7,6 +7,8 @@
  		let author = this.refs.author.value,
  			text = this.refs.text.value;
  		this.props.onCommentSubmit({author,text,date:'刚刚'});
+	 	this.refs.author.value = ''
+	  	this.refs.text.value = ''
  	}
  	
  	render(){
